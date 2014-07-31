@@ -1,0 +1,18 @@
+---
+title: Home
+---
+
+<h3 style="margin-top:0">Recent News</h3>
+
+<h3>Upcoming Events</h3>
+
+<% events_by_month(Date.today.month).each do |event| %>
+  <%= render 'event_list_item', event: event %>
+<% end %>
+
+<% events_by_month((Date.today >> 1).month).each do |event| %>
+  <%= render 'event_list_item', event: event %>
+<% end %>
+
+
+

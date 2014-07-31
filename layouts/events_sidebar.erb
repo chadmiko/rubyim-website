@@ -1,0 +1,15 @@
+
+
+<% events = events_by_month(Date.today.month) %>
+
+<% if events.any? %>
+
+  <h5><%= Date.today.strftime("%b") %> Events</h5>
+
+  <% events.each do |event| %>
+
+    <%= render 'event_list_item', event: event %>
+
+  <% end %>
+
+<% end %>

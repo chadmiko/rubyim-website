@@ -1,0 +1,14 @@
+---
+title: Carriers
+is_dynamic: true
+---
+
+
+  <h2 class="page-header">Marketing Partners</h2>
+
+  <div class="">
+    <% @item.children.sort_by {|i| i[:name].to_s }.each do |carrier| %>
+      <h4> <a href="<%= carrier.identifier.chop %>.html" title="<%= carrier[:name] %>"><%= carrier[:name] %></a></h4>
+    <% end %>
+  </div>
+

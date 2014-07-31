@@ -1,0 +1,341 @@
+Crashlog created at 2014-07-31 00:20:43 -0400
+
+===== MESSAGE:
+
+Nanoc::Errors::UnknownLayout: The site does not have a layout with identifier “/sidebar/”.
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/helpers/rendering.rb:83:in `render'
+  1. layout /default/:30:in `get_binding'
+  2. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/erb.rb:850:in `eval'
+  3. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/erb.rb:850:in `result'
+  4. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/filters/erb.rb:34:in `run'
+  5. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/filter.rb:121:in `setup_and_run'
+  6. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/result_data/item_rep.rb:403:in `layout'
+  7. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  8. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/rule_context.rb:74:in `layout'
+  9. /Users/chadmiko/Documents/Projects/ruby-marketing/Rules:32:in `block in parse'
+  10. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/rule.rb:70:in `instance_eval'
+  11. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/rule.rb:70:in `apply_to'
+  12. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/compiler.rb:386:in `compile_rep'
+  13. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/compiler.rb:342:in `block in compile_reps'
+  14. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/compiler.rb:335:in `loop'
+  15. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/compiler.rb:335:in `compile_reps'
+  16. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  17. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib/nanoc/base/source_data/site.rb:59:in `compile'
+  18. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-nanoc-1.0.2/lib/guard/nanoc.rb:65:in `block in recompile'
+  19. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-nanoc-1.0.2/lib/guard/nanoc.rb:63:in `chdir'
+  20. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-nanoc-1.0.2/lib/guard/nanoc.rb:63:in `recompile'
+  21. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-nanoc-1.0.2/lib/guard/nanoc.rb:28:in `run_on_changes'
+  22. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:74:in `block in run_supervised_task'
+  23. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:71:in `catch'
+  24. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:71:in `run_supervised_task'
+  25. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:119:in `block in _run_first_task_found'
+  26. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:117:in `each'
+  27. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:117:in `_run_first_task_found'
+  28. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:53:in `block in run_on_changes'
+  29. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:150:in `block (3 levels) in _scoped_plugins'
+  30. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:148:in `each'
+  31. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:148:in `block (2 levels) in _scoped_plugins'
+  32. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:147:in `catch'
+  33. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:147:in `block in _scoped_plugins'
+  34. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:145:in `each'
+  35. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:145:in `_scoped_plugins'
+  36. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/runner.rb:46:in `run_on_changes'
+  37. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/setuper.rb:296:in `block (2 levels) in _listener_callback'
+  38. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/commander.rb:108:in `block in within_preserved_state'
+  39. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/commander.rb:105:in `synchronize'
+  40. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/commander.rb:105:in `within_preserved_state'
+  41. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib/guard/setuper.rb:295:in `block in _listener_callback'
+  42. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+  43. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+  44. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+  45. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+  46. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+
+===== VERSION INFORMATION:
+
+nanoc 3.7.1 © 2007-2014 Denis Defreyne.
+Running ruby 2.1.1 (2014-02-24) on x86_64-darwin12.0 with RubyGems 2.2.2.
+
+===== SYSTEM INFORMATION:
+
+Darwin Chad-Mikolajciks-MacBook-Pro.local 12.4.0 Darwin Kernel Version 12.4.0: Wed May  1 17:57:12 PDT 2013; root:xnu-2050.24.15~1/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  adsf 1.2.0
+  builder 3.2.2
+  bundler 1.5.2
+  celluloid 0.15.2
+  chronic 0.10.2
+  coderay 1.1.0
+  colored 1.2
+  commonjs 0.2.7
+  cri 2.6.1
+  daemons 1.1.9
+  eventmachine 1.0.3
+  ffi 1.9.3
+  formatador 0.2.5
+  fssm 0.2.10
+  guard 2.6.1
+  guard-nanoc 1.0.2
+  less 2.6.0
+  libv8 3.16.14.3
+  listen 2.7.9
+  lumberjack 1.0.9
+  method_source 0.8.2
+  mime-types 2.3
+  mini_portile 0.6.0
+  nanoc 3.7.1
+  nokogiri 1.6.3.1
+  posix-spawn 0.3.8
+  pry 0.10.0
+  pygments.rb 0.6.0
+  rack 1.5.2
+  rb-fsevent 0.9.4
+  rb-inotify 0.9.5
+  rdiscount 2.1.7.1
+  redcarpet 3.1.2
+  ref 1.0.5
+  slop 3.6.0
+  systemu 2.6.4
+  therubyracer 0.12.1
+  thin 1.6.2
+  thor 0.19.1
+  timers 1.1.0
+  yajl-ruby 1.1.0
+  yuicompressor 1.3.3
+
+===== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-J7P1e7/Render"
+Apple_Ubiquity_Message => "/tmp/launch-Z3yiYr/Apple_Ubiquity_Message"
+BUNDLE_BIN_PATH => "/Users/chadmiko/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.5.2/bin/bundle"
+BUNDLE_GEMFILE => "/Users/chadmiko/Documents/Projects/ruby-marketing/Gemfile"
+CHAD_PASSWORD => "Blu3R@bb!t$"
+CHAD_USERNAME => "spiderman"
+COLUMNS => "97"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-n15ib6/org.macosforge.xquartz:0"
+GEM_HOME => "/Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing"
+GEM_PATH => "/Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing:/Users/chadmiko/.rvm/gems/ruby-2.1.1@global"
+GUARD_NOTIFIERS => "---\n- :name: :terminal_title\n  :options:\n    :silent: true\n"
+GUARD_NOTIFY => "true"
+HOME => "/Users/chadmiko"
+IRBRC => "/Users/chadmiko/.rvm/rubies/ruby-2.1.1/.irbrc"
+ISPA_AGENCY_DATABASE_URL => "postgres://macbook@localhost:5555/pb_development"
+ISPA_ASSETS_BUCKET => "assets.ispahq.com"
+ISPA_CMS_ADMIN_PASSWORD => "12blu3MsA2"
+ISPA_CMS_ADMIN_USER => "msawebuser"
+ISPA_CMS_ASSET_HOST => "http://murmuring-beach-8008.herokuapp.com"
+ISPA_CMS_MAILER_PASSWORD => "T0dOor2D!3"
+ISPA_CMS_MAILER_USERNAME => "info@ispahq.com"
+ISPA_CMS_SECRET_KEY => "e7d685ce2e9633f6d903fdd0157d11a53869be924b17d2e1afe92f6e621ffce8"
+ISPA_DB_CRYPTO_SECRET_BLACK => "EfYqtIlIyeLUm+tudQxgInHlWoNbGILeY+Z/JQ4MIAU="
+ISPA_DB_CRYPTO_SECRET_BLUE => "GEnhMosMVysq4YveTDGkNtTjMXoKEACnXMAHVFa/N0s="
+ISPA_DB_CRYPTO_SECRET_CYAN => "biV36LCOYs4q2SmivOf4f7WXieRO/uiWfmlRRl6B0eI="
+ISPA_DB_CRYPTO_SECRET_GREEN => "wxZ7TkJA8EnPJIl0czvZ59xEDVY0n0FR4Vx4JJbUDVw="
+ISPA_DB_CRYPTO_SECRET_MAGENTA => "dMrGYuNuQR+SveqDSKQPODnso9z1Tsdw4/jeaUvhjZg="
+ISPA_DB_CRYPTO_SECRET_ORANGE => "jF9vbvh2d8n08jC0AH6eiK7CmXwOwkKF6qznKjlchJM="
+ISPA_DB_CRYPTO_SECRET_WHITE => "pTSYDUq7F7JRKOqltiDC7jtw+66/VXWA6h6imt/KXt4="
+LANG => "en_US.UTF-8"
+LINES => "46"
+LOGNAME => "chadmiko"
+MY_RUBY_HOME => "/Users/chadmiko/.rvm/rubies/ruby-2.1.1"
+OLDPWD => "/Users/chadmiko/Documents/Projects/rails/leadis"
+PADRINO_ENV => "development"
+PATH => "/Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/bin:/Users/chadmiko/.rvm/gems/ruby-2.1.1@global/bin:/Users/chadmiko/.rvm/rubies/ruby-2.1.1/bin:/Users/chadmiko/.rvm/bin:/usr/local/homebrew/sbin:/usr/local/heroku/bin:/usr/local/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
+PWD => "/Users/chadmiko/Documents/Projects/ruby-marketing"
+RUBYLIB => "/Users/chadmiko/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.5.2/lib"
+RUBYOPT => "-rbundler/setup"
+RUBY_VERSION => "ruby-2.1.1"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-fGiOF7/Listeners"
+TERM => "xterm-256color"
+TERM_PROGRAM => "Apple_Terminal"
+TERM_PROGRAM_VERSION => "309"
+TERM_SESSION_ID => "473D2D48-A31E-4034-9916-2741BAB32646"
+TMPDIR => "/var/folders/kr/1kymw06n64n9zx9zk1r_rtkh0000gn/T/"
+TWILIO_SID => "ACc40059e95664a8a4660b5ac9b7034bb0"
+TWILIO_TOKEN => "91ded86fd7e99ea469df2066ed1ccddd"
+USER => "chadmiko"
+_ => "/Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/bin/guard"
+_ORIGINAL_GEM_PATH => "/Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing:/Users/chadmiko/.rvm/gems/ruby-2.1.1@global"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+_system_arch => "x86_64"
+_system_name => "OSX"
+_system_type => "Darwin"
+_system_version => "10.8"
+rvm_bin_path => "/Users/chadmiko/.rvm/bin"
+rvm_delete_flag => "0"
+rvm_path => "/Users/chadmiko/.rvm"
+rvm_prefix => "/Users/chadmiko"
+rvm_ruby_string => "ruby-2.1.1"
+rvm_version => "1.25.22 (stable)"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    adsf (1.2.0)
+      rack (>= 1.0.0)
+    builder (3.2.2)
+    celluloid (0.15.2)
+      timers (~> 1.1.0)
+    chronic (0.10.2)
+    coderay (1.1.0)
+    colored (1.2)
+    commonjs (0.2.7)
+    cri (2.6.1)
+      colored (~> 1.2)
+    daemons (1.1.9)
+    eventmachine (1.0.3)
+    ffi (1.9.3)
+    formatador (0.2.5)
+    fssm (0.2.10)
+    guard (2.6.1)
+      formatador (>= 0.2.4)
+      listen (~> 2.7)
+      lumberjack (~> 1.0)
+      pry (>= 0.9.12)
+      thor (>= 0.18.1)
+    guard-nanoc (1.0.2)
+      guard (>= 1.8.0)
+      nanoc (>= 3.6.3)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    libv8 (3.16.14.3)
+    listen (2.7.9)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    lumberjack (1.0.9)
+    method_source (0.8.2)
+    mime-types (2.3)
+    mini_portile (0.6.0)
+    nanoc (3.7.1)
+      cri (~> 2.3)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
+    posix-spawn (0.3.8)
+    pry (0.10.0)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pygments.rb (0.6.0)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
+    rack (1.5.2)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rdiscount (2.1.7.1)
+    redcarpet (3.1.2)
+    ref (1.0.5)
+    slop (3.6.0)
+    systemu (2.6.4)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
+    thin (1.6.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
+    thor (0.19.1)
+    timers (1.1.0)
+    yajl-ruby (1.1.0)
+    yuicompressor (1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  builder
+  chronic
+  fssm
+  guard-nanoc
+  less
+  mime-types
+  nanoc
+  nokogiri
+  pygments.rb
+  rdiscount
+  redcarpet
+  systemu
+  therubyracer
+  thin
+  yuicompressor
+
+===== LOAD PATHS:
+
+  0. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/yuicompressor-1.3.3/lib
+  1. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/thin-1.6.2
+  2. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/thin-1.6.2/lib
+  3. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/therubyracer-0.12.1
+  4. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/therubyracer-0.12.1/lib
+  5. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/therubyracer-0.12.1/ext
+  6. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/systemu-2.6.4/lib
+  7. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/ref-1.0.5/lib
+  8. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/redcarpet-3.1.2
+  9. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/redcarpet-3.1.2/lib
+  10. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/rdiscount-2.1.7.1
+  11. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/rdiscount-2.1.7.1/lib
+  12. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/pygments.rb-0.6.0/lib
+  13. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/yajl-ruby-1.1.0
+  14. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/yajl-ruby-1.1.0/lib
+  15. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/posix-spawn-0.3.8
+  16. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/posix-spawn-0.3.8/lib
+  17. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/nokogiri-1.6.3.1
+  18. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nokogiri-1.6.3.1/lib
+  19. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/mini_portile-0.6.0/lib
+  20. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/mime-types-2.3/lib
+  21. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/libv8-3.16.14.3-x86_64-darwin-12/lib
+  22. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/libv8-3.16.14.3-x86_64-darwin-12/ext
+  23. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/less-2.6.0/lib
+  24. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-nanoc-1.0.2/lib
+  25. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/nanoc-3.7.1/lib
+  26. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/guard-2.6.1/lib
+  27. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/thor-0.19.1/lib
+  28. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/pry-0.10.0/lib
+  29. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/slop-3.6.0/lib
+  30. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/method_source-0.8.2/lib
+  31. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/lumberjack-1.0.9/lib
+  32. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/listen-2.7.9/lib
+  33. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/rb-inotify-0.9.5/lib
+  34. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/rb-fsevent-0.9.4/lib
+  35. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/fssm-0.2.10/lib
+  36. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/formatador-0.2.5/lib
+  37. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/ffi-1.9.3
+  38. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/ffi-1.9.3/lib
+  39. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/ffi-1.9.3/ext/ffi_c
+  40. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/extensions/x86_64-darwin-12/2.1.0/eventmachine-1.0.3
+  41. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/eventmachine-1.0.3/lib
+  42. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/daemons-1.1.9/lib
+  43. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/cri-2.6.1/lib
+  44. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/commonjs-0.2.7/lib
+  45. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/colored-1.2/lib
+  46. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/coderay-1.1.0/lib
+  47. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/chronic-0.10.2/lib
+  48. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/celluloid-0.15.2/lib
+  49. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/timers-1.1.0/lib
+  50. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/builder-3.2.2/lib
+  51. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/adsf-1.2.0/lib
+  52. /Users/chadmiko/.rvm/gems/ruby-2.1.1@ruby-marketing/gems/rack-1.5.2/lib
+  53. /Users/chadmiko/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.5.2/lib
+  54. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/site_ruby/2.1.0
+  55. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/site_ruby/2.1.0/x86_64-darwin12.0
+  56. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/site_ruby
+  57. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/vendor_ruby/2.1.0
+  58. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/vendor_ruby/2.1.0/x86_64-darwin12.0
+  59. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/vendor_ruby
+  60. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0
+  61. /Users/chadmiko/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/x86_64-darwin12.0

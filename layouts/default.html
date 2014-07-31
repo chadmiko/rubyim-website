@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @item[:title] + " | " if @item[:title] %>Ruby Insurance Marketing</title>
+
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <% if @config[:debug] %>
+      <% @config[:css].each do |asset| %>
+        <link href="/css/<%= asset %>.css" media="screen" rel="stylesheet" type="text/css">
+      <% end %>
+    <% end %>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <%= render 'navbar' %>
+
+    <div class="container">
+
+      <div class="row">
+      
+        <div class="col-sm-3 col-md-2 menu">
+
+          <%= render 'sidebar' %>
+
+        </div>
+
+        <div class="col-sm-8 col-sm-offset-1 col-md-9 col-md-offset-1">
+      
+          <%= yield %>
+      
+        </div>
+    
+      </div>
+
+    </div>
+   
+    <%= render 'footer' %>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+
+<div class="container">
+
+    <div class="col-md-8">
+
+      <h2 style="margin-top:0"> <%= @item[:title] %> </h2>
+      <h4> <%= Chronic.parse(@item[:start_at]).strftime("%-b %e, %Y %l:%M %p") %> </h4>
+
+      <%= yield %>
+
+      <p><a href="/events">View All Events</a></p>
+
+    </div>
+
+    <div class="col-md-3 col-md-offset-1">
+
+      <%= render 'events_sidebar' %>
+      
+    </div>
+
+</div>
