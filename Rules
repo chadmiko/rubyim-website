@@ -25,7 +25,6 @@ compile '/css/*/' do
 end
 
 compile '/static/*/' do
-  puts item.inspect
 end
 
 compile '/carriers/*/' do
@@ -55,11 +54,8 @@ compile '*' do
   end
 end
 
-puts "ROUTE"
-
 route '/static/*/' do
   # static/foo.html -> /foo.html
-  puts item.inspect  
   item.identifier[7..-2]
 end
 
