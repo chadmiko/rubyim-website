@@ -6,11 +6,11 @@
 
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Didact+Gothic:400,600,300,800,700,400italic|PT+Serif:400,400italic">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <% if @config[:debug] %>
       <% @config[:css].each do |asset| %>
-        <link href="/css/<%= asset %>.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="/css/<%= asset %>.css?v=1" media="screen" rel="stylesheet" type="text/css">
       <% end %>
     <% end %>
 

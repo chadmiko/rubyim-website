@@ -1,5 +1,11 @@
+body {
+  font-family: 'Lucida', sans-serif;
+  padding-top: 20px;
+  color: #111;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-family: 'Didact Gothic', 'Lucida', sans-serif;
   font-weight: 200;
 }
 
@@ -7,11 +13,39 @@ h1 {
   font-weight: 400;
 }
 
+#site-header {
+  height: 70px;
+  padding-bottom: 5px;
+}
+
+#site-header .container {
+  border-bottom: 1px solid #000;
+}
+
+#footer {
+  text-align: center;
+  padding: 20px 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+#logo {
+  color: red;
+  text-indent: -1000px;
+  background: url("/assets/images/logo.png") no-repeat center;
+  height: 65px;
+  width: 499px;
+}
+
 .page-header {
   margin-top: 0;
   color: #152b67;
   font-weight: 400;
   border: 0;
+}
+
+.btn {
+  font-family: 'Didact Gothic', 'Lucida', sans-serif;
 }
 
 .btn-outline{

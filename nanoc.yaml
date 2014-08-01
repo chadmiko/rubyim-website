@@ -62,8 +62,8 @@ data_sources:
     # UTF-8 (which they should be!), change this.
     encoding: utf-8
   - 
-    type: events
-    items_root: /events/
+    type: static
+    items_root: /static/
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:
@@ -78,7 +78,6 @@ checks:
 
 css:
   - common
-  - body
 
 debug: true
 
