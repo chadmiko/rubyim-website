@@ -1,0 +1,7 @@
+        <div class="article">
+          <div class="article-body"> 
+            <a class="title" href="<%= chop_to_html( @article.identifier ) %>"><%= @article[:title] %></a> 
+            <span class="text-muted"> <%= Chronic.parse(@article[:publish_at]).strftime("%^b %-d") %>  
+          </div>
+        </div>
+

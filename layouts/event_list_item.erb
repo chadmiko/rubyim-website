@@ -1,18 +1,14 @@
-        <div class="row">
-      
-            <div class="col-md-3">
+        <div class="article">
+           <div class="article-body">
+
+              <a class="title" href="<%= chop_to_html( @event.identifier ) %>"><%= @event[:title] %></a>
               
-              <%= Chronic.parse(@event[:start_at]).strftime("%^b %-d") %>  
               
-              <span style="margin-left:5px"><%= Chronic.parse(@event[:start_at]).strftime("%l:%M %p") %></span>
+              <span class="text-muted">
+                <%= Chronic.parse(@event[:start_at]).strftime("%^b %-d %l:%M %p") %>  
+                <%#= Chronic.parse(@event[:start_at]).strftime("%l:%M %p") %>
+              </span>
                
             </div>
-
-            <div class="col-md-9">
-
-              <a href="<%= chop_to_html( @event.identifier ) %>"><%= @event[:title] %></a>
-              
-            </div>
-    
-          </div>
+        </div>
 

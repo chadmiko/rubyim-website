@@ -1,0 +1,21 @@
+---
+title: Recent News
+---
+
+  <h2 style="margin-top:0"> <%= @item[:title] %> </h2>
+
+  <% if @item[:summary] %>
+    <p class="lead"> <%= @item[:summary] %> </p>
+  <% end %>
+
+  <p class="text-muted">
+    Posted <%= Chronic.parse(@item[:publish_at]).strftime("%-b %e, %Y %l:%M %p") %>
+  </p>
+
+
+
+  <%= yield %>
+
+  <p>
+    <a href="/news">More news</a>.
+  </p>  
