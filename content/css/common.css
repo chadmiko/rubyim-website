@@ -1,7 +1,16 @@
 body {
   font-family: 'Lucida', sans-serif;
-  padding-top: 20px;
+  padding-top: 5px;
   color: #111;
+}
+
+a {
+  color: #800000;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: #550000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,12 +23,16 @@ h1 {
 }
 
 #site-header {
-  height: 70px;
-  padding-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 #site-header .container {
   border-bottom: 1px solid #000;
+}
+
+.container > .navbar-header {
+  margin: 0 auto;
+  padding-bottom: 5px;
 }
 
 #footer {
@@ -30,31 +43,30 @@ h1 {
 }
 
 #logo {
-  color: red;
+  background: url("/assets/images/logo-230x30.png") no-repeat center;
+  height: 30px;
+  width: 230px;
   text-indent: -1000px;
-  background: url("/assets/images/logo.png") no-repeat center;
-  height: 65px;
-  width: 499px;
 }
 
 .page-header {
   margin-top: 0;
-  color: #152b67;
   font-weight: 400;
   border: 0;
 }
 
-.btn {
-  font-family: 'Didact Gothic', 'Lucida', sans-serif;
+.btn, a.btn {
+  font-family: 'PT Serif', 'Lucida', sans-serif;
+  text-decoration: none;
 }
 
-.btn-outline{
+.btn-outline, a.btn-outline{
   background-color:transparent;
   color: #333;
   border-color: #111;
 }
 
-.btn-outline.maroon {
+.btn-outline-maroon, a.btn-outline.maroon {
   color: maroon;
   border-color: maroon;
 }
@@ -67,9 +79,30 @@ h1 {
 
 .btn-outline.maroon:hover, .btn-outline.maroon:focus, .btn-outline.maroon:active {
   background-color: maroon;
+  color: #fff;
 }
 
 .menu .btn-block {
   margin-bottom: 5px;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  #site-header {
+    margin-bottom: 20px;
+  }
+
+  #logo {
+    background: url("/assets/images/logo.png") no-repeat center;
+    height: 65px;
+    width: 499px;
+  }
 }
 
