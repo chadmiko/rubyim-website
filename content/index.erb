@@ -2,17 +2,35 @@
 title: Home
 ---
 
-<h3 style="margin-top:0">Recent News</h3>
-
-<h3>Upcoming Events</h3>
-
-<% events_by_month(Date.today.month).each do |event| %>
-  <%= render 'event_list_item', event: event %>
-<% end %>
-
-<% events_by_month((Date.today >> 1).month).each do |event| %>
-  <%= render 'event_list_item', event: event %>
-<% end %>
 
 
+<div class="hidden-xs">
 
+  <h3 class="no-margin-top text-muted small-caps">upcoming events</h3>
+  <div class="events">
+
+  <% events_by_month(Date.today.month).each do |event| %>
+    <%= render 'event_list_item', event: event %>
+  <% end %>
+
+  <% events_by_month((Date.today >> 1).month).each do |event| %>
+    <%= render 'event_list_item', event: event %>
+  <% end %>
+
+  </div>
+
+
+  <h3 class="text-muted small-caps">recent news</h3>
+  <div class="articles">
+    <% recent_news.each do |article| %>
+      <%= render 'article_item', article: article %>
+    <% end %>
+  </div>
+ 
+</div>
+
+<div class="visible-xs">
+  <div class="text-center">
+    <%= render 'contact_phone' %>
+  </div>
+</div>

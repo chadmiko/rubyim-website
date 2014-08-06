@@ -1,17 +1,14 @@
+---
+title: Recent News
+---
 
+  <h2 class="no-margin-top small-caps text-muted">recent news</h2>
 
-  <div class="row">
+  <div class="articles">
+    <% recent_news(20).each do |article| %>
+    
+      <%= render 'article_item', article: article %>
 
-    <div class="col-md-10">
-
-
-    </div>
-
-    <div class="col-md-2">
-
-
-    </div>
-
+    <% end %>
   </div>
-
-
+  

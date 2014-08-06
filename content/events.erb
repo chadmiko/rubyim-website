@@ -1,7 +1,12 @@
+---
+title: Upcoming Events
+---
 
-  <h2 class="page-header">Events</h2>
+  <h2 class="no-margin-top text-muted small-caps">upcoming events</h2>
 
-  <div>
-
+  <div class="events">
+    <% events_by_month(Date.today.month).each do |event| %>
+      <%= render 'event_list_item', event: event %>
+    <% end %>
   </div>
 
