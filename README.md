@@ -10,7 +10,7 @@ For setting up gh-pages, see:  http://notes.sovechkin.com/nanoc_github_pages.htm
 The content of the following directories is copyright Chad Mikolajcik: 
 
 * content/
-* static/assets/
+* static/
 
 All other content released under MIT license. 
 
