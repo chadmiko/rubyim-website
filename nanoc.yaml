@@ -78,6 +78,7 @@ checks:
 
 css:
   - common
+  - article
 
 debug: true
 

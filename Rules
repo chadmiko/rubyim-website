@@ -27,13 +27,36 @@ end
 compile '/static/*/' do
 end
 
-compile '/carriers/*/' do
-  layout 'carrier'
+compile '/events/*/' do
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+
+  if ext == 'md' || ext == 'markdown'
+    filter :erb
+    filter :rdiscount
+  elsif ext == 'erb'
+    filter :erb
+  end
+
+  layout 'event'
   layout 'default'
 end
 
-compile '/events/*/' do
-  layout 'event'
+compile '/news/*/' do
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+
+  if ext == 'md' || ext == 'markdown' 
+    filter :erb
+    filter :rdiscount
+  else
+    filter :erb
+  end
+
+  layout 'article'
+  layout 'default'
+end
+
+compile '/carriers/*/' do
+  layout 'carrier'
   layout 'default'
 end
 
@@ -67,6 +90,10 @@ route '/carriers/*/' do
   item.identifier.chop + '.html'
 end
 
+route '/news/*/' do
+  item.identifier.chop + '.html'
+end
+
 route '/events/*/' do
   item.identifier.chop + '.html'
 end
@@ -76,8 +103,13 @@ route '*' do
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   else
-    # Write item with identifier /foo/ to /foo/index.html
-    item.identifier + 'index.html'
+    if item.identifier == '/404/'
+      # special case
+      item.identifier.chop + '.html'
+    else
+      # Write item with identifier /foo/ to /foo/index.html
+      item.identifier + 'index.html'
+    end
   end
 end
 
