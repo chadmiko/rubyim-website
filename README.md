@@ -1,8 +1,10 @@
 # About
 
-A micro-site landing-page type marketing site for launch of a carrier product into a new market. I ran it on Github pages.
+A micro-site landing-page type marketing site for launch of a carrier product into a new market. 
 
-For agent use only.  No longer relevant.
+I ran it on Github pages, just an excuse to play around with static site generators which were emerging at the time.  This one is in **nanoc**.
+
+For agent use only.  
 
 ### Notes
 
