@@ -1,6 +1,8 @@
 # About
 
-http://www.rubyim.com
+A micro-site landing-page type marketing site for launch of a carrier product into a new market. I ran it on Github pages.
+
+For agent use only.  No longer relevant.
 
 ### Notes
 
